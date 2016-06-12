@@ -35,11 +35,20 @@
     </div>
 
     <div data-role="content">
-        <img id="logo" src="img/logo.png">
+        <div data-role="fieldcontain">
+            <label for="channelnameoptions">Channel Name</label>
+            <input type="text" id="channelnameoptions" name="channelnameoptions" placeholder="enter channel name">
+            <br>
+            <div class="ui-btn ui-input-btn ui-shadow">
+                Clear Channel
+                <input type="button" id="clearchannel" data-corners="false" data-enhanced="true" value="Clear Channel">
+            </div>
+        </div>
 
-        <div id="showVideo"></div>
-        <br /><br />
-        <ul id="vidlist" data-role="listview"></ul>
+        <div data-role="fieldcontain">
+            <label for="maxresultsoptions">Max Results Options</label>
+            <input type="number" id="maxresultsoptions" name="maxresultsoptions" placeholder="enter max results">
+        </div>
     </div>
 
     <div data-role="footer">
